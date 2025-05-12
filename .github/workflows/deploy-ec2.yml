@@ -17,7 +17,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H "${{ secrets.HOST }}" >> ~/.ssh/known_hosts
 
-      - name: SSH Remote Commands
+      - name: SSH Remote Commands deploy
         uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.HOST }}
