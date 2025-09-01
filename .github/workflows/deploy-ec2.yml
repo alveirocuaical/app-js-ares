@@ -26,7 +26,7 @@ jobs:
           script: |
             echo "Deploying into server!"
             sudo su <<EOF
-            cd ~/ares1/app-js-ares/
+            cd ~/app-js-ares/
             git pull origin master
             cp app.js ~/ares1/public/js
             EOF
